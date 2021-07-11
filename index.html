@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+
+  <body>
+    <div class ="top-line">
+      <div>
+        <a  id= "weather" href = "https://www.google.com/search?q=%EB%82%A0%EC%94%A8&oq=%EB%82%A0%EC%94%A8&aqs=chrome.0.69i59j0i131i433j0i433j0i131i433j0j0i433j0i131i433j69i61.811j1j4&sourceid=chrome&ie=UTF-8">
+          <div id = "iconTemp">
+            <img id = "icon"></img><br>
+            <span id = "temp"></span><br>
+          </div>
+          <div id="locaWind">
+            <span id = "location"></span><br>
+            <span id = "wind"></span>
+          </div>
+        </a>
+      </div>
+      <form class = "hidden" id="login-form">
+        <input id = "login-before" type="text" placeholder="What is your name?" required/>
+      </form>
+      <h1 class="hidden" id="login-after"></h1>
+      <h3>
+        <a href="https://calendar.naver.com/main#%7B%22sSection%22%3A%22scheduleMain%22%2C%22oParameter%22%3A%7B%22sViewType%22%3A%22month%22%2C%22sDate%22%3A%222021-05-01%22%7D%7D">
+          <div id="calender"></div>
+        </a>
+      </h3>
+    </div>
+
+    <div class = "main">
+      <h2 id="clock">00:00:00</h2>
+        <div id= "todo-title">
+        <h2 id = "todo-text">Today's work is...</h2>
+          <form id="todo-form">
+            <input id = "todo-box" type="text" placeholder="Please Write a To Do" required />
+          </form>
+        </div>
+          <ul id="todo-list"></ul>
+
+        <div id="quote">
+            <span id = "quotes"></span>
+            <span id = "authors"></span>
+        </div>
+    </div>  
+  </body>
+<script src="js/weather.js"></script>
+<script src="js/logIn.js"></script> 
+<script src="js/time.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/background.js"></script>
+<script src="js/ToDo.js"></script>
+</html>
